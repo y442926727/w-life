@@ -19,13 +19,13 @@ public class TreeNodeRes<T> implements Serializable {
     private Integer type;
     private Boolean isChecked;
     private Integer sort;
-    private List<TreeNodeRes> children;
+    private List<TreeNodeRes<T>> children;
 
-    public void addChildren(TreeNodeRes res) {
+    public void addChildren(List<TreeNodeRes<T>> res) {
         if (children == null) {
             children = new ArrayList<>();
         }
-        children.add(res);
+        children.addAll(res);
     }
 
 
