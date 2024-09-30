@@ -2,10 +2,23 @@ package cn.wlife.base.response;
 
 import java.io.Serializable;
 
+/**
+ * 结果返回体
+ * @param <T>
+ */
 public class R<T> implements Serializable {
 
+    /**
+     *返回结果代码
+     */
     private String code;
+    /**
+     * 返回消息
+     */
     private String msg;
+    /**
+     * 返回数据
+     */
     private T data;
 
     public R() {

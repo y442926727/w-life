@@ -7,6 +7,12 @@ import java.io.Serial;
 import java.io.Serializable;
 import java.util.List;
 
+
+/**
+ * 单id公共请求基类
+ * @param <T>
+ * @author  qunhua.yi
+ */
 @Data
 public class CommonIdReq<T> implements Serializable {
 

@@ -9,10 +9,21 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * 节点列表转节点树工具类型
+ * @author qunhua.yi
+ * @since 0.1
+ */
 public class List2TreeUtil {
 
+    /**
+     * 节点列表转节点
+     * @param allList
+     * @return
+     * @param <T>
+     */
     public static <T> List<TreeNodeRes<T>> buildTree(List<ListNodeRes<T>> allList) {
-        if (CollUtil.isEmpty(allList)) {
+        if (CollUtil.isNotEmpty(allList)) {
             List<ListNodeRes<T>> parentNodes = allList.stream()
                     .filter(t -> ObjectUtil.equals(t.getParentId(), null)
                             || ObjectUtil.equals(t.getParentId().toString(), "")

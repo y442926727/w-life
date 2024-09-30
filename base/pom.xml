@@ -5,16 +5,29 @@
     <parent>
         <artifactId>starter-parent</artifactId>
         <groupId>cn.w-life</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
+    <groupId>cn.w-life</groupId>
     <artifactId>starter-base</artifactId>
+    <version>0.1-SNAPSHOT</version>
+<dependencies>
+<!--    <dependency>-->
+<!--        <groupId>com.jacob</groupId>-->
+<!--        <artifactId>jacob</artifactId>-->
+<!--        <version>1.20</version>-->
+<!--        <scope>system</scope>-->
+<!--        &lt;!&ndash;本地的jacob.jar的路径&ndash;&gt;-->
+<!--&lt;!&ndash;        <systemPath>D:\jacob.jar</systemPath>&ndash;&gt;-->
+<!--    </dependency>-->
 
-
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-    </properties>
-
+</dependencies>
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+    </plugins>
+</build>
 </project>

@@ -9,6 +9,8 @@ import java.io.Serializable;
 
 /**
  * 分页查询入参
+ * @author qunhua.yi
+ * @since 0.1
  */
 @Data
 public class PageInfoReq implements Serializable {

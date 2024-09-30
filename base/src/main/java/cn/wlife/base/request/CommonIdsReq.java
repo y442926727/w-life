@@ -8,9 +8,14 @@ import java.io.Serial;
 import java.io.Serializable;
 import java.util.List;
 
+
+/**
+ * 多id公共请求基类
+ * @param <T>
+ * @author  qunhua.yi
+ */
 @Data
 public class CommonIdsReq<T> implements Serializable {
-
 
     @Serial
     private static final long serialVersionUID = 5283749414670622101L;

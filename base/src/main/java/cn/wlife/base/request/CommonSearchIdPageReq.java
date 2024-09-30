@@ -7,7 +7,7 @@ import java.io.Serializable;
 
 /**
  * 根据id及其类型查询分页
- *
+ * @author qunhua.yi
  * @param <T>
  */
 @Data
